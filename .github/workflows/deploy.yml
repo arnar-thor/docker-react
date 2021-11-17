@@ -13,6 +13,7 @@ jobs:
       - run: docker build -t arnar-thor/docker-react -f Dockerfile.dev .
       - run: docker run -e CI=true arnar-thor/docker-react npm test
 
+
 #      - name: Generate deployment package
 #        run: zip -r deploy.zip . -x '*.git*'
  #
